@@ -92,6 +92,7 @@ def extract_app_name(script):
     app_name = re.findall(r'\'(.+?)\'',index_of_context)[0]
     return { 'type': context_type, 'name': app_name }
 
+
 # Controllers API
 @APP.route('/')
 def home():
@@ -170,12 +171,9 @@ def viewlist():
     for x in client_data[:-1]:
         new_client = Client(x['name'], x['client_id'])
         client_list[new_client] = [" "]
-
-
-    counter = 0
+        
     # add rules to client list 
     for rule in rules_data:
-        counter = counter + 1
         context_data = extract_app_name(rule['script'])
         app_rule_type = context_data['type']
         app_name = context_data['name']
