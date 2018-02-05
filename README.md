@@ -96,5 +96,15 @@ for rule in rules_data:
     # end of client_list loop
 # end of rules_data loop       
 ```
+## Screenshots of application running 
 
+### Login page
 
+<img src="https://user-images.githubusercontent.com/5739370/35821492-1f2860c4-0a77-11e8-8cf8-e9f8689d8b87.PNG" width="400" height="200" />
+
+### Dashboard page
+
+<img src="https://user-images.githubusercontent.com/5739370/35821517-362e00ee-0a77-11e8-8914-9da85d41ee8b.PNG" width="400" height="200" />
+
+### View list page
+<img src="https://user-images.githubusercontent.com/5739370/35822316-e6a99ca6-0a79-11e8-9e01-816598cfd6b3.PNG" width="450" height="200" />
