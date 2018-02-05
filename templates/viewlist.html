@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- font awesome from BootstrapCDN -->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/public/app.css" rel="stylesheet">
+    </head>
+    <body class="home">
+        <div class="container">
+            <div class="login-page clearfix">
+                <div class="logged-in-box auth0-box logged-in">
+                    <h1 id="logo"><img src="//cdn.auth0.com/samples/auth0_logo_final_blue_RGB.png" /></h1>
+                    <h2>Applications & Rules List</h2>
+
+                    {% for key, value in client_list.items() %}
+                    <div class="panel panel-primary">
+                    <div class="panel-heading"><h4><b>Application Name</b>: {{ key.name }}
+                    <b>Application ID</b>: {{ key.id }}</div></h4>
+                    <div class="panel-body">
+                        <ul class="list-group list-group-flush">
+                        {% for rule in value %}
+                            <li class="list-group-item"> <h5> {{ rule }} </h5></li>
+                            {% endfor %}
+                        </div>
+                        </ul>
+                        <br>
+                        <br>
+                    </div>
+                    {% endfor %}
+                <a class="btn btn-primary btn-lg btn-logout btn-block" href="/logout">Logout</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
