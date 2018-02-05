@@ -108,3 +108,7 @@ for rule in rules_data:
 
 ### View list page
 <img src="https://user-images.githubusercontent.com/5739370/35822316-e6a99ca6-0a79-11e8-9e01-816598cfd6b3.PNG" width="450" height="200" />
+
+## License
+
+This project is licensed under the MIT license. See the [LICENSE](LICENSE) file for more info.
