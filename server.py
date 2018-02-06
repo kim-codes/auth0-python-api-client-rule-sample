@@ -150,7 +150,7 @@ def viewlist():
     mngmnt_api_data = {'client_id':AUTH0_CLIENT_ID_MNGNMT_API,
                        'client_secret':AUTH0_CLIENT_SECRET_MNGNMT_API,
                        'audience': AUTH0_AUDIENCE_MNGNMT_API,
-                       'grant_type': GRANT_TYPE}
+                       'grant_type': 'client_credentials'}
 
     req = requests.post(base_url + "/oauth/token", data=mngmnt_api_data)
     access_data = req.json()
