@@ -5,7 +5,7 @@
 
 To run the sample python web application you will need the appropriate dependencies found in the requirements.txt file. You can quickly install them by running:
 
-`run pip install -r requirements.txt`
+run `pip install -r requirements.txt`
 
 Create a new python application and a Non-Interactive Client in Auth0.
 
